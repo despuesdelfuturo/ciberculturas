@@ -82,6 +82,7 @@ svg#edges{position:absolute;top:0;left:0;overflow:visible;pointer-events:none}
 #panel .conn{display:block;padding:8px 10px;margin-bottom:6px;background:var(--card);
   border:1px solid var(--border);border-radius:8px;font-size:13px;cursor:pointer;color:var(--text)}
 #panel .conn:hover{border-color:var(--accent)}
+#cc{display:block;margin-top:8px;width:88px;opacity:.75;transition:opacity .2s;pointer-events:auto}#cc:hover{opacity:1}#cc svg{display:block}
 #empty-hint{position:fixed;bottom:14px;right:14px;font-size:11px;color:var(--dim);z-index:4;pointer-events:none}
 @media (max-width:640px){
   #title .credit{font-size:9.5px;margin-top:8px}
@@ -131,7 +132,7 @@ body.panel-open #title{opacity:.28;transition:opacity .3s}
 </div>
 
 <div id="hud">
-  <div id="title"><h1><span class="t1">Ciberculturas</span><span class="t2">Cartografía sintética</span></h1><span class="credit">Prof. Pablo García Lamas</span></div>
+  <div id="title"><h1><span class="t1">Ciberculturas</span><span class="t2">Cartografía sintética</span></h1><span class="credit">Prof. Pablo García Lamas</span><a id="cc" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="license noopener" title="Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)" aria-label="Licencia Creative Commons BY-NC-SA 4.0"><svg viewBox="0 0 88 31" width="88" height="31" role="img"><rect width="88" height="31" rx="2" fill="#aab2ab"/><rect x="1" y="1" width="86" height="29" rx="1.5" fill="none" stroke="#000"/><rect x="1" y="22" width="86" height="8" fill="#000"/><circle cx="15" cy="12.5" r="10" fill="#fff" stroke="#000" stroke-width="2"/><text x="15" y="17" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="12" fill="#000">cc</text><g fill="#fff" stroke="#000" stroke-width="1.4"><circle cx="40" cy="12.5" r="7.5"/><circle cx="57" cy="12.5" r="7.5"/><circle cx="74" cy="12.5" r="7.5"/></g><g fill="#000"><circle cx="40" cy="9" r="1.5"/><path d="M37.2 11h5.6v4.6h-1.4v2.9h-2.8v-2.9h-1.4z"/><text x="57" y="16.3" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="10.5">$</text></g><path d="M52.3 17.3l9.4-9.6" stroke="#000" stroke-width="1.5"/><path d="M52.3 17.3l9.4-9.6" stroke="#fff" stroke-width=".5"/><path d="M70.4 12.5a3.7 3.7 0 1 1 1.2 2.7" fill="none" stroke="#000" stroke-width="1.7"/><path d="M68.6 10.6l3 2.6 1-3.5z" fill="#000"/><text x="44" y="28.4" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="6" fill="#fff" letter-spacing=".4">BY-NC-SA 4.0</text></svg></a></div>
   <div id="hudr">
     <div id="search"><input id="q" type="search" placeholder="Buscar…  ( / )" autocomplete="off" spellcheck="false"><div id="qres"></div></div>
     <div id="controls">
